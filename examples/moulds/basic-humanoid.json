@@ -1,0 +1,27 @@
+{
+  "name": "basic-humanoid-32",
+  "version": "0.1",
+  "canvas": {
+    "width": 192,
+    "height": 64,
+    "transparent": true
+  },
+  "frames": [
+    {"id": "idle_0", "x": 0, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "walk_0", "x": 32, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "walk_1", "x": 64, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "attack_0", "x": 96, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "hurt_0", "x": 128, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "death_0", "x": 160, "y": 0, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null},
+    {"id": "levelup_0", "x": 0, "y": 32, "width": 32, "height": 32, "anchor": {"x": 16, "y": 29}, "mask": null}
+  ],
+  "animations": {
+    "idle": {"frames": ["idle_0"], "fps": 2, "loop": true},
+    "walk": {"frames": ["walk_0", "walk_1"], "fps": 6, "loop": true},
+    "attack": {"frames": ["attack_0"], "fps": 6, "loop": false},
+    "hurt": {"frames": ["hurt_0"], "fps": 4, "loop": false},
+    "death": {"frames": ["death_0"], "fps": 3, "loop": false},
+    "levelup": {"frames": ["levelup_0"], "fps": 4, "loop": false}
+  },
+  "palette": null
+}

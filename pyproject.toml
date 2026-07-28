@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "playable-lie"
+version = "0.1.0"
+description = "Local-first mould, mutation, and consensus tooling for coherent AI-assisted game assets."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Pillow>=10.4",
+  "numpy>=2.0",
+  "jsonschema>=4.23"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
