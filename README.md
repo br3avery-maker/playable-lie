@@ -34,7 +34,7 @@ coherent sprite sheet + playable project
 
 ## First proof
 
-The first proof is deliberately small:
+The first proof:
 
 1. Load one concept image.
 2. Load one sprite-sheet mould describing idle, walk, attack, hurt, death, and level-up frames.
@@ -43,8 +43,6 @@ The first proof is deliberately small:
 5. Align frames and reject catastrophic outliers.
 6. Press the swarm into one stable sprite sheet.
 7. Export the final sheet, preview, rejected candidates, diff map, and run report.
-
-The first prototype does **not** need to generate a whole game. It needs to prove that one cheap AI pass plus local deterministic refinement can outperform repeated paid generation calls.
 
 ## Repository map
 
@@ -67,4 +65,4 @@ The first prototype does **not** need to generate a whole game. It needs to prov
 
 ## Status
 
-Concept scaffold. The next commit should implement only the mould loader, frame splitter, mutant generator, and one consensus strategy.
+Concept scaffold.
